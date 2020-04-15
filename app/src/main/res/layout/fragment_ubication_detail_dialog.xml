@@ -1,10 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.UbicationDetailDialogFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/toolbarUbication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@drawable/platzi_conf_2"
+                    android:scaleType="centerCrop"/>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    android:layout_margin="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvDetailConferenceHour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lugar Platzi Conf"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:id="@+id/tvDetailConferenceUbication"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ubicacion"
+                            android:textSize="15sp"
+                            android:drawableLeft="@drawable/ic_place_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_margin="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_margin="10dp"/>
 
-</FrameLayout>
+                        <TextView
+                            android:id="@+id/tvDetailConferencPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="333-333"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/ic_phone_black_24dp"
+                            android:layout_margin="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvDetailConferenceDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sitio Web"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/ic_language_black_24dp"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
