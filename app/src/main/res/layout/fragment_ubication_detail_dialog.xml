@@ -14,7 +14,8 @@
     </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -33,13 +34,14 @@
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="1dp"
-                    android:layout_margin="15dp">
+                    android:layout_margin="6dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:background="@drawable/shape_parrafo">
                         <TextView
-                            android:id="@+id/tvDetailConferenceHour"
+                            android:id="@+id/tvDetailNamePlace"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lugar Platzi Conf"
@@ -47,49 +49,59 @@
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="6dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_margin="12dp"/>
                         <TextView
-                            android:id="@+id/tvDetailConferenceUbication"
+                            android:id="@+id/tvDetailUbication"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Ubicacion"
                             android:textSize="15sp"
                             android:drawableLeft="@drawable/ic_place_black_24dp"
-                            android:drawablePadding="5dp"
+                            android:drawablePadding="6dp"
                             android:textColor="@color/colorPrimary"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="12dp"/>
                         <View
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"
+                            android:layout_height="0.5dp"
                             android:background="@color/colorPrimaryDark"
-                            android:layout_margin="10dp"/>
-
+                            android:layout_margin="12dp"/>
                         <TextView
-                            android:id="@+id/tvDetailConferencPhone"
+                            android:id="@+id/tvDetailPhone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="333-333"
                             android:textSize="15sp"
                             android:textColor="@color/colorPrimary"
-                            android:drawablePadding="5dp"
+                            android:drawablePadding="6dp"
                             android:drawableLeft="@drawable/ic_phone_black_24dp"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="12dp"/>
                         <View
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"
+                            android:layout_height="0.5dp"
                             android:background="@color/colorPrimaryDark"
-                            android:layout_margin="10dp"/>
+                            android:layout_margin="12dp"/>
 
                         <TextView
-                            android:id="@+id/tvDetailConferenceDescription"
+                            android:id="@+id/tvDetailWebsite"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Sitio Web"
                             android:textSize="15sp"
                             android:textColor="@color/colorPrimary"
-                            android:drawablePadding="5dp"
+                            android:drawablePadding="6dp"
                             android:drawableLeft="@drawable/ic_language_black_24dp"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="12dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_margin="12dp"/>
+
 
                     </LinearLayout>
 

@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.SpeakersFragment">
+    tools:context=".view.ui.fragments.SpeakersFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSchedule"
+        android:id="@+id/rvSpeaker"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <RelativeLayout
+        android:id="@+id/rlBaseSpeaker"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <View

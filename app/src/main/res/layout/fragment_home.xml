@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.HomeFragment">
+    tools:context=".view.ui.fragments.HomeFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/heightImageViewHome"
                     android:src="@drawable/banner_platzi_conf"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="1dp"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="@dimen/carCornerRadius"
             app:cardElevation="4dp"
-            android:layout_margin="15dp">
+            android:layout_marginHorizontal="15dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +75,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/heightImageViewHome"
                     android:src="@drawable/platzi_conf_2"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="1dp"
+                    android:scaleType="centerCrop"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -123,7 +124,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/heightImageViewHome"
                     android:src="@drawable/platzi_conf_3"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="1dp"
+                    android:scaleType="centerCrop"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
